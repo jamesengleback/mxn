@@ -1,5 +1,4 @@
-
-codons = {'TTT': {'aa': 'F', 'frac': '0.58'},
+Codons = {'TTT': {'aa': 'F', 'frac': '0.58'},
  'TCT': {'aa': 'S', 'frac': '0.17'},
  'TAT': {'aa': 'Y', 'frac': '0.59'},
  'TGT': {'aa': 'C', 'frac': '0.46'},
@@ -63,6 +62,4 @@ codons = {'TTT': {'aa': 'F', 'frac': '0.58'},
  'GCG': {'aa': 'A', 'frac': '0.33'},
  'GAG': {'aa': 'E', 'frac': '0.32'},
  'GGG': {'aa': 'G', 'frac': '0.15'}}
-bm3aa = 'MTIKEMPQPKTFGELKNLPLLNTDKPVQALMKIADELGEIFKFEAPGRVTRYLSSQRLIKEACDESRFDKNLSQALKFVRDFAGDGLFTSWTHEKNWKKAHNILLPSFSQQAMKGYHAMMVDIAVQLVQKWERLNADEHIEVPEDMTRLTLDTIGLCGFNYRFNSFYRDQPHPFITSMVRALDEAMNKLQRANPDDPAYDENKRQFQEDIKVMNDLVDKIIADRKASGEQSDDLLTHMLNGKDPETGEPLDDENIRYQIITFLIAGHETTSGLLSFALYFLVKNPHVLQKAAEEAARVLVDPVPSYKQVKQLKYVGMVLNEALRLWPTAPAFSLYAKEDTVLGGEYPLEKGDELMVLIPQLHRDKTIWGDDVEEFRPERFENPSAIPQHAFKPFGNGQRACIGQQFALHEATLVLGMMLKHFDFEDHTNYELDIKETLTLKPEGFVVKAKSKKIPLGGIPSPSTEQSAKKVRK*'
 
-orf = 'ATGGGCAGCAGCCATCATCATCATCATCACAGCAGCGGCCTGGTGCCGCGCGGCAGCcatatgacaattaaagaaatgcctcagccaaaaacgtttggagagcttaaaaatttaccgttattaaacacagataaaccggttcaagctttgatgaaaattgcggatgaattaggagaaatctttaaattcgaggcgcctggccgtgtaacgcgctacttatcaagtcagcgtctaattaaagaagcatgcgatgaatcacgctttgataaaaacttaagtcaagcgcttaaatttgtacgtgattttgcaggagacgggttatttacaagctggacgcatgaaaaaaattggaaaaaagcgcataatatcttacttccaagcttcagtcagcaggcaatgaaaggctatcatgcgatgatggtcgatatcgccgtgcagcttgttcaaaagtgggagcgtctaaatgcagatgagcatattgaggtaccggaagacatgacacgtttaacgcttgatacaattggtctttgcggctttaactatcgctttaacagcttttaccgagatcagcctcatccatttattacaagtatggtccgtgcactggatgaagcaatgaacaagctgcagcgagcaaatccagacgacccagcttatgatgaaaacaagcgccagtttcaagaagatatcaaggtgatgaacgacctagtagataaaattattgcagatcgcaaagcaagcggtgaacaaagcgatgatttattaacgcacatgctaaacggaaaagatccagaaacgggtgagccgcttgatgacgagaacattcgctatcaaattattacattcttaattgcgggacacgaaacaactagtggtcttttatcatttgcgctgtatttcttagtgaaaaatccacatgtattacaaaaagcagcagaagaagcagcacgagttctagtagatcctgttccaagctacaaacaagtcaaacagcttaaatatgtcggcatggtcttaaacgaagcgctgcgcttatggccaactgctcctgcgttttccctatatgcaaaagaagatacggtgcttggaggagaatatcctttagaaaaaggcgacgaactaatggttctgattcctcagcttcaccgtgataaaacaatttggggagacgatgtggaagagttccgtccagagcgttttgaaaatccaagtgcgattccgcagcatgcgtttaaaccgtttggaaacggtcagcgtgcgtgtatcggtcagcagttcgctcttcatgaagcaacgctggtcctaggtatgatgctaaaacactttgactttgaagatcatacaaactacgagctggatattaaagaaactttaacgttaaaacctgaaggctttgtggtaaaagcaaaatcgaaaaaaattccgcttggcggtattccttcacctagcactgaacagtctgctaaaaaagtacgcaaatag'

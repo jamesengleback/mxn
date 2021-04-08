@@ -4,32 +4,32 @@ todo:
     primers
     score
     tmcalc.js
-
 '''
 import os
 import nwalign3 as nw
-from data import codons
+from mxn.data import Codons
 
-class cds:
+class CDS:
     def __init__(self, dna, aaseq = None):
         # dna is a single ORF
         # aaseq is the canonical aa sequence
         self.dna = dna.upper()
+        self._dna = dna.upper()
         self.aaseq = aaseq # reference sequence
-        self.seq = self.aaseq # for changing
+        self.seq = self.aaseq # for changing - needs to be a copy
         self.primers = {}
-    @property
-    def translation(self):
-        return ''.join([codons[i.upper()] for i in self.codons])
     @property
     def codons(self):
         return [self.dna[i:i+3] for i in range(0,len(self.dna),3)]
+    @property
+    def translation(self):
+        return ''.join([Codons[i]['aa'] for i in self.codons])
     @property
     def mutations(self):
         return utils.diff(self.aaseq, self.seq)
     def mutate(self, pos, aa):
         self.seq = utils.mxn(self.seq, pos,aa.upper())
-        new_codon = utils.best_codon(codons, aa)
+        new_codon = utils.best_codon(Codons, aa)
         c = list(self.codons)
         c[pos] = new_codon
         self.dna = ''.join(c)
@@ -37,7 +37,6 @@ class cds:
     def primers(self, mutation):
         # mutation codon
         # grow
-
         pass
 
 class utils:
@@ -64,15 +63,3 @@ class utils:
         return max(options, key=options.get)
     def score_primer(s):
         pass
-def test():
-    from data import bm3aa, orf
-    
-    c = cds(orf, bm3aa)
-    s1 = c.dna
-    c.mutate(100,'a')
-    c.mutate(33,'e')
-    aln1, aln2 = nw.global_align(orf.upper(), c.dna.upper())
-    utils.print_aln(aln1, aln2,'orf','new')
-
-if __name__ == '__main__':
-    test()
