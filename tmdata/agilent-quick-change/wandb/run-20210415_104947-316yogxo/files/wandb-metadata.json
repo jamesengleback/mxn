@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.10.19-1-MANJARO-x86_64-with-glibc2.10",
+    "python": "3.8.3",
+    "heartbeatAt": "2021-04-15T09:49:58.546607",
+    "startedAt": "2021-04-15T09:49:47.217593",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "tmdata/agilent-quick-change/fit_params.py",
+    "program": "fit_params.py",
+    "git": {
+        "remote": null,
+        "commit": "0f0973ff660eaf3e967851f4c0a03ea4f66d95cd"
+    },
+    "email": "jamesengleback@hotmail.co.uk",
+    "root": "/home/james/src/mxn",
+    "host": "thinkpad",
+    "username": "james",
+    "executable": "/home/james/miniconda3/bin/python"
+}

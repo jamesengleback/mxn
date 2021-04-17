@@ -1,0 +1,68 @@
+2021-04-15 10:30:50,963 INFO    MainThread:3303483 [wandb_setup.py:_flush():70] setting env: {}
+2021-04-15 10:30:50,964 INFO    MainThread:3303483 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-04-15 10:30:50,964 INFO    MainThread:3303483 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-04-15 10:30:50,964 INFO    MainThread:3303483 [wandb_init.py:_log_setup():303] Logging user logs to /home/james/src/mxn/tmdata/agilent-quick-change/wandb/run-20210415_103050-3ebphdyy/logs/debug.log
+2021-04-15 10:30:50,965 INFO    MainThread:3303483 [wandb_init.py:_log_setup():304] Logging internal logs to /home/james/src/mxn/tmdata/agilent-quick-change/wandb/run-20210415_103050-3ebphdyy/logs/debug-internal.log
+2021-04-15 10:31:02,067 INFO    MainThread:3303483 [wandb_run.py:_console_start():1237] atexit reg
+2021-04-15 10:31:02,067 INFO    MainThread:3303483 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-04-15 10:31:02,067 INFO    MainThread:3303483 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-04-15 10:31:02,068 INFO    MainThread:3303483 [redirect.py:install():204] install start
+2021-04-15 10:31:02,068 INFO    MainThread:3303483 [redirect.py:install():219] install stop
+2021-04-15 10:31:02,068 INFO    MainThread:3303483 [redirect.py:install():204] install start
+2021-04-15 10:31:02,068 INFO    MainThread:3303483 [redirect.py:install():219] install stop
+2021-04-15 10:31:02,068 INFO    MainThread:3303483 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-04-15 10:31:02,958 ERROR   MainThread:3303483 [util.py:get_module():160] Error importing optional module plotly.tools
+Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/util.py", line 155, in get_module
+    return import_module(name)
+  File "/home/james/miniconda3/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'plotly'
+2021-04-15 10:31:02,987 INFO    MainThread:3303483 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2021-04-15 10:31:02,988 INFO    MainThread:3303483 [wandb_run.py:_restore():1179] restore
+2021-04-15 10:31:02,988 INFO    MainThread:3303483 [redirect.py:uninstall():223] uninstall start
+2021-04-15 10:31:02,988 INFO    MainThread:3303483 [redirect.py:_stop():278] _stop: stdout
+2021-04-15 10:31:02,989 INFO    stdout    :3303483 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2021-04-15 10:31:02,989 INFO    MainThread:3303483 [redirect.py:_stop():284] _stop closed: stdout
+2021-04-15 10:31:02,989 INFO    stdout    :3303483 [redirect.py:_pipe_relay():136] relay done done: stdout
+2021-04-15 10:31:02,989 INFO    MainThread:3303483 [redirect.py:_stop():290] _stop joined: stdout
+2021-04-15 10:31:02,989 INFO    MainThread:3303483 [redirect.py:_stop():292] _stop rd closed: stdout
+2021-04-15 10:31:02,989 INFO    MainThread:3303483 [redirect.py:uninstall():227] uninstall done
+2021-04-15 10:31:02,990 INFO    MainThread:3303483 [redirect.py:uninstall():223] uninstall start
+2021-04-15 10:31:02,990 INFO    MainThread:3303483 [redirect.py:_stop():278] _stop: stderr
+2021-04-15 10:31:02,990 INFO    MainThread:3303483 [redirect.py:_stop():284] _stop closed: stderr
+2021-04-15 10:31:02,990 INFO    stderr    :3303483 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2021-04-15 10:31:02,990 INFO    stderr    :3303483 [redirect.py:_pipe_relay():136] relay done done: stderr
+2021-04-15 10:31:02,990 INFO    MainThread:3303483 [redirect.py:_stop():290] _stop joined: stderr
+2021-04-15 10:31:02,990 INFO    MainThread:3303483 [redirect.py:_stop():292] _stop rd closed: stderr
+2021-04-15 10:31:02,990 INFO    MainThread:3303483 [redirect.py:uninstall():227] uninstall done
+2021-04-15 10:31:10,625 ERROR   MainThread:3303483 [wandb_run.py:_atexit_cleanup():1225] Problem finishing run
+Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1215, in _atexit_cleanup
+    self._on_finish()
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1342, in _on_finish
+    self.history._flush()
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_history.py", line 59, in _flush
+    self._callback(row=self._data, step=self._step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 598, in _history_callback
+    self._backend.interface.publish_history(row, step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 172, in publish_history
+    data = data_types.history_dict_to_json(run, data, step=step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/data_types.py", line 2493, in history_dict_to_json
+    payload[key] = val_to_json(run, key, val, namespace=step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/data_types.py", line 2542, in val_to_json
+    val = Plotly.make_plot_media(val)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/data_types.py", line 2048, in make_plot_media
+    val = util.matplotlib_to_plotly(val)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/util.py", line 381, in matplotlib_to_plotly
+    tools = get_module(
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/util.py", line 162, in get_module
+    raise wandb.Error(required)
+wandb.errors.error.Error: plotly is required to log interactive plots, install with: pip install plotly or convert the plot to an image with `wandb.Image(plt)`

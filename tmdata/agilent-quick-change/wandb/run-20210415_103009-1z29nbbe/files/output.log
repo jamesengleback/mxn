@@ -1,0 +1,9 @@
+  0%|          | 0/100 [00:00<?, ?it/s]/home/james/miniconda3/lib/python3.8/site-packages/torch/autograd/__init__.py:130: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  Variable._execution_engine.run_backward(
+ 16%|█▌        | 16/100 [00:00<00:00, 155.03it/s] 35%|███▌      | 35/100 [00:00<00:00, 161.87it/s] 52%|█████▏    | 52/100 [00:00<00:00, 163.32it/s] 70%|███████   | 70/100 [00:00<00:00, 167.67it/s] 87%|████████▋ | 87/100 [00:00<00:00, 166.36it/s]100%|██████████| 100/100 [00:00<00:00, 167.79it/s]
+Traceback (most recent call last):
+  File "fit_params.py", line 80, in <module>
+    main()
+  File "fit_params.py", line 74, in main
+    plt.scatter(y,yh)
+NameError: name 'plt' is not defined

@@ -79,7 +79,7 @@ def main():
     fig, ax = plt.subplots(3,2, figsize = (10,10))
     for i, j in zip(ax.flatten(), 'ABCDEF'):
         data = pd.read_csv(f'{j}.csv')
-        i.scatter(data['true'], data['pred'], s = 0.2)
+        i.scatter(data['true'], data['pred'], s = 0.2, alpha = 0.8)
         i.plot([0,100],[0,100])
         i.set_xlabel('pred tm °C')
         i.set_ylabel('true tm °C')

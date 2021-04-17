@@ -1,0 +1,9 @@
+  0%|          | 0/100 [00:00<?, ?it/s]/home/james/miniconda3/lib/python3.8/site-packages/torch/autograd/__init__.py:130: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  Variable._execution_engine.run_backward(
+ 33%|███▎      | 33/100 [00:00<00:00, 326.91it/s] 71%|███████   | 71/100 [00:00<00:00, 338.58it/s]100%|██████████| 100/100 [00:00<00:00, 343.22it/s]
+QApplication: invalid style override passed, ignoring it.
+/home/james/miniconda3/lib/python3.8/site-packages/plotly/matplotlylib/mplexporter/exporter.py:267: MatplotlibDeprecationWarning:
+
+
+The get_offset_position function was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+

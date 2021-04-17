@@ -1,0 +1,31 @@
+  0%|          | 0/100 [00:00<?, ?it/s]/home/james/miniconda3/lib/python3.8/site-packages/torch/autograd/__init__.py:130: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  Variable._execution_engine.run_backward(
+ 17%|█▋        | 17/100 [00:00<00:00, 164.48it/s] 34%|███▍      | 34/100 [00:00<00:00, 165.98it/s] 52%|█████▏    | 52/100 [00:00<00:00, 167.94it/s] 70%|███████   | 70/100 [00:00<00:00, 169.25it/s] 87%|████████▋ | 87/100 [00:00<00:00, 169.09it/s]100%|██████████| 100/100 [00:00<00:00, 169.84it/s]
+QApplication: invalid style override passed, ignoring it.
+wandb: ERROR plotly is required to log interactive plots, install with: pip install plotly or convert the plot to an image with `wandb.Image(plt)`
+Traceback (most recent call last):
+  File "fit_params.py", line 81, in <module>
+    main()
+  File "fit_params.py", line 78, in main
+    wandb.log({'fig':plt})
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 809, in log
+    self.history._row_add(data)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_history.py", line 44, in _row_add
+    self._flush()
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_history.py", line 59, in _flush
+    self._callback(row=self._data, step=self._step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 598, in _history_callback
+    self._backend.interface.publish_history(row, step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 172, in publish_history
+    data = data_types.history_dict_to_json(run, data, step=step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/data_types.py", line 2493, in history_dict_to_json
+    payload[key] = val_to_json(run, key, val, namespace=step)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/data_types.py", line 2542, in val_to_json
+    val = Plotly.make_plot_media(val)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/data_types.py", line 2048, in make_plot_media
+    val = util.matplotlib_to_plotly(val)
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/util.py", line 381, in matplotlib_to_plotly
+    tools = get_module(
+  File "/home/james/miniconda3/lib/python3.8/site-packages/wandb/util.py", line 162, in get_module
+    raise wandb.Error(required)
+wandb.errors.error.Error: plotly is required to log interactive plots, install with: pip install plotly or convert the plot to an image with `wandb.Image(plt)`

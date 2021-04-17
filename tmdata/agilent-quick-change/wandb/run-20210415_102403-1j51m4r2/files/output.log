@@ -1,0 +1,9 @@
+  0%|          | 0/10000 [00:00<?, ?it/s]  0%|          | 0/10000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "fit_params.py", line 68, in <module>
+    main()
+  File "fit_params.py", line 61, in main
+    loss = loss_fn(torch.tensor(norm(yh), requires_grad=True),
+  File "fit_params.py", line 51, in <lambda>
+    norm = lambda x : (x - min(x)) / max(x)
+TypeError: unsupported operand type(s) for -: 'list' and 'float'

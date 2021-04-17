@@ -1,0 +1,3 @@
+  0%|          | 0/5 [00:00<?, ?it/s]/home/james/miniconda3/lib/python3.8/site-packages/torch/autograd/__init__.py:130: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  Variable._execution_engine.run_backward(
+ 60%|██████    | 3/5 [00:00<00:00, 28.20it/s]100%|██████████| 5/5 [00:00<00:00, 29.09it/s]
