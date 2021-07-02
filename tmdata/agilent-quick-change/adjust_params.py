@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 import primer3
 
 def scale(params):
@@ -58,6 +59,7 @@ def main():
         y.append(tm)
         yh.append(tm_pred)
 
+    sns.kdeplot(y,yh, fill = True)
     plt.scatter(y,yh, marker='+', alpha=0.5)
     plt.plot([0,100],[0,100])
     plt.xlim(0,100)

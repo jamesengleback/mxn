@@ -21,7 +21,6 @@
 	- dmso: 8%
 ![](tmdata/agilent-quick-change/params-accuracy.png')
 
-#### good enough for now
 
 ### mxn.py
 - CDS.mutate( -- makes primer - it already has some of the variables like the codon and area of sequence, so that's what I'm doing for now. primers made with CDS.make_primers( and added to CDS.primers . updates sequence with new codon each time (chosen based on e.coli bias)
@@ -31,9 +30,13 @@
 - developed features with a test.py that reads the BM3 mutations from connecting the dots and creates all mutations and prints a dataframe of the primers. 
 
 ## issues
+- only designed forward primer - check agilent docs -> 
 - statefulness - order mutations are applied matters. this is a problem with overlapping primers if i want to do the pcrs in a different order. 
 	- i should start making <4 mutations at a time to start with 
 
 - mxn calculated tm vs agilent - i should make some comparisons! test with a selenium script?
 - tangled code - i should try some teardown / shuffled variants of the CDS object
 - ui - needs field testing i think, can definitely be improved
+
+## todo
+- i'll generate some priemrs for some connecting the dots mutants and compare that to what the agilent tool designs, then order and see how it goes in the lab. 

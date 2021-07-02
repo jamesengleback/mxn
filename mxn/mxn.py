@@ -54,8 +54,8 @@ class CDS:
             right = lambda n : seq_from[min(changes_idx) - n :min(changes_idx)]
 
             homoTm = lambda s : primer3.calcHomodimerTm(s,mv_conc= 25, dv_conc = 0.5)
-            endscore = lambda s : sum([1 for i in s[2] + s[-2] if i == 'C' or i == 'G']\
-                                    + [2 for i in s[1] + s[-1] if i == 'C' or i == 'G']) # max 6
+            endscore = lambda s : sum([1 for i in s[1] + s[-2] if i == 'C' or i == 'G']\
+                                    + [2 for i in s[0] + s[-1] if i == 'C' or i == 'G']) # max 6
             scorefn = lambda l, m, r : abs(agilent_tm(l, r) - tm) \
                                             - endscore(l+m+r) # + homoTm(l+m+r)
             objective = lambda ln, rn : scorefn(left(round(ln)), payload, right(round(rn)))
